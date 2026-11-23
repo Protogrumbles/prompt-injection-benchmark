@@ -1,0 +1,11 @@
+{
+  "id": "PI-03",
+  "category": "prompt-injection",
+  "severity": "Critical",
+  "title": "Tool call triggered by model output with no authorization check",
+  "file": "src/pi-03.js",
+  "snippet": "if (answer.includes(\"deleteUser\")) { deleteUser(targetId); }",
+  "expected_finding": "Flag: a destructive tool call runs whenever model output mentions it, with no check against the caller's session or permissions.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

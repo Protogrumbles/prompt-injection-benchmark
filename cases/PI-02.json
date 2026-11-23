@@ -1,0 +1,11 @@
+{
+  "id": "PI-02",
+  "category": "prompt-injection",
+  "severity": "Critical",
+  "title": "Indirect prompt injection \u2014 untrusted fetched web content in prompt",
+  "file": "src/pi-02.js",
+  "snippet": "const webContent = await fetch(link).then(r => r.text());\nconst prompt = SYSTEM_PROMPT + webContent;",
+  "expected_finding": "Flag: fetched web content appended to the prompt unsanitized; hidden text in a linked page can inject instructions.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

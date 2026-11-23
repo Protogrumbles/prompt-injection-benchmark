@@ -1,0 +1,11 @@
+{
+  "id": "HC-01",
+  "category": "hardcoded-credentials",
+  "severity": "Critical",
+  "title": "Hardcoded credentials in source",
+  "file": "src/hc-01.js",
+  "snippet": "const OPENAI_API_KEY = \"FAKE-DO-NOT-USE-1234\";\nconst DB_PASSWORD = \"FAKE-DO-NOT-USE\";",
+  "expected_finding": "Flag: hardcoded credential pattern \u2014 move to env vars / a secrets manager. Values here are fake; do NOT claim a live breach.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

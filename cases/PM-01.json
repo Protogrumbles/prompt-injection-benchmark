@@ -1,0 +1,11 @@
+{
+  "id": "PM-01",
+  "category": "permissions",
+  "severity": "High",
+  "title": "Wildcard admin policy for every authenticated user",
+  "file": "src/pm-01.js",
+  "snippet": "const EVERYONE_POLICY = { Action: [\"*\"], Resource: [\"*\"] };",
+  "expected_finding": "Flag: wildcard admin policy granted to every authenticated user with no role check.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

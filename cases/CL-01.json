@@ -1,0 +1,11 @@
+{
+  "id": "CL-01",
+  "category": "clean-control",
+  "severity": "n/a",
+  "title": "Clean control \u2014 parameterized query (must NOT be flagged)",
+  "file": "src/cl-01.js",
+  "snippet": "db.query(\"SELECT id, name FROM users WHERE email = $1\", [email]);",
+  "expected_finding": "No finding expected: parameterized query, no interpolation.",
+  "is_control": true,
+  "note": "Clean control: a correct run must report zero findings here. Any finding is a false positive."
+}

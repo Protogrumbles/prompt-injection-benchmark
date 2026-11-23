@@ -1,0 +1,11 @@
+{
+  "id": "SQ-01",
+  "category": "sql-injection",
+  "severity": "Critical",
+  "title": "SQL injection \u2014 interpolated email in query",
+  "file": "src/sq-01.js",
+  "snippet": "db.query(`SELECT * FROM users WHERE email = '${email}'`);",
+  "expected_finding": "Flag: user input interpolated into a SQL query string; use a parameterized query.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

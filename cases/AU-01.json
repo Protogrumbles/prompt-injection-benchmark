@@ -1,0 +1,11 @@
+{
+  "id": "AU-01",
+  "category": "authentication",
+  "severity": "Critical",
+  "title": "Client-trusted role \u2014 admin asserted by caller",
+  "file": "src/au-01.js",
+  "snippet": "const isAdmin = req.headers[\"x-user-role\"] === \"admin\" || req.body.isAdmin;",
+  "expected_finding": "Flag: admin status comes from a client-supplied header/body field; any caller can assert admin.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

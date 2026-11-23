@@ -1,0 +1,11 @@
+{
+  "id": "PT-01",
+  "category": "path-traversal",
+  "severity": "High",
+  "title": "Path traversal \u2014 unvalidated file path",
+  "file": "src/pt-01.js",
+  "snippet": "const filePath = path.join(PUBLIC_DIR, req.query.file);",
+  "expected_finding": "Flag: user-supplied file path joined into a filesystem path with no normalization or containment check; ../ escapes the public directory.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

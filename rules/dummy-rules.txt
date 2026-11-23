@@ -1,0 +1,23 @@
+# Dummy rules — HARNESS SELF-TEST ONLY. Not a RAILGUARD score.
+# Deliberately incomplete: matches some cases, misses others, and
+# over-matches one clean control (to prove false positives are caught).
+
+rule: dummy-prompt-injection
+category: prompt-injection
+patterns:
+  - SYSTEM_PROMPT +
+
+rule: dummy-sql-injection
+category: sql-injection
+patterns:
+  - /WHERE email = '\$\{/
+
+rule: dummy-hardcoded-credentials
+category: hardcoded-credentials
+patterns:
+  - OPENAI_API_KEY =
+
+rule: dummy-overbroad
+category: prompt-injection
+patterns:
+  - system

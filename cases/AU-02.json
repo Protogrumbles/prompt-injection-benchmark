@@ -1,0 +1,11 @@
+{
+  "id": "AU-02",
+  "category": "authentication",
+  "severity": "Critical",
+  "title": "Forgeable, unsigned session token",
+  "file": "src/au-02.js",
+  "snippet": "const userId = Buffer.from(token, \"base64\").toString(\"utf-8\");",
+  "expected_finding": "Flag: session token is base64(userId) with no signature, expiry, or server-side lookup.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

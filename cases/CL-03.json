@@ -1,0 +1,11 @@
+{
+  "id": "CL-03",
+  "category": "clean-control",
+  "severity": "n/a",
+  "title": "Clean control \u2014 structured system/user separation (must NOT be flagged)",
+  "file": "src/cl-03.js",
+  "snippet": "const messages = [{ role: \"system\", content: SYSTEM_PROMPT }, { role: \"user\", content: userInput }];",
+  "expected_finding": "No finding expected: system instructions and user data are separate structured messages.",
+  "is_control": true,
+  "note": "Clean control: a correct run must report zero findings here. Any finding is a false positive."
+}

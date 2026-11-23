@@ -1,0 +1,11 @@
+{
+  "id": "SQ-02",
+  "category": "sql-injection",
+  "severity": "Critical",
+  "title": "SQL injection \u2014 concatenated term in LIKE clause",
+  "file": "src/sq-02.js",
+  "snippet": "\"SELECT * FROM users WHERE name LIKE '%\" + term + \"%'\"",
+  "expected_finding": "Flag: user input concatenated into a LIKE clause; use a parameterized query.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

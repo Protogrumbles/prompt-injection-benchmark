@@ -1,0 +1,11 @@
+{
+  "id": "SS-01",
+  "category": "ssrf",
+  "severity": "High",
+  "title": "SSRF \u2014 attacker-controlled URL fetched server-side",
+  "file": "src/ss-01.js",
+  "snippet": "const target = req.query.url;\nawait fetch(target);",
+  "expected_finding": "Flag: attacker-controlled URL fetched server-side with no allowlist, no private-range block, and no timeout; can reach internal services / cloud metadata.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "LG-01",
+  "category": "secrets-in-logs",
+  "severity": "High",
+  "title": "Secrets written to logs",
+  "file": "src/lg-01.js",
+  "snippet": "console.log(\"auth:\", req.headers.authorization);\nconsole.log(\"password:\", password);",
+  "expected_finding": "Flag: bearer token and plaintext password written to logs; redact secrets before logging.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}

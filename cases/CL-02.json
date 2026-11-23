@@ -1,0 +1,11 @@
+{
+  "id": "CL-02",
+  "category": "clean-control",
+  "severity": "n/a",
+  "title": "Clean control \u2014 secrets from environment (must NOT be flagged)",
+  "file": "src/cl-02.js",
+  "snippet": "const apiKey = process.env.OPENAI_API_KEY;\nif (!apiKey) throw new Error(\"missing key\");",
+  "expected_finding": "No finding expected: secret read from env vars with a fail-fast check.",
+  "is_control": true,
+  "note": "Clean control: a correct run must report zero findings here. Any finding is a false positive."
+}

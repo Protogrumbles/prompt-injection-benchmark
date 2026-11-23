@@ -1,0 +1,11 @@
+{
+  "id": "PI-01",
+  "category": "prompt-injection",
+  "severity": "Critical",
+  "title": "Direct prompt injection \u2014 user input concatenated into system prompt",
+  "file": "src/pi-01.js",
+  "snippet": "const prompt = SYSTEM_PROMPT + \"\\n\\nUser request:\\n\" + userInput;",
+  "expected_finding": "Flag: user input concatenated directly into the system prompt; attacker instructions can override system instructions.",
+  "is_control": false,
+  "note": "Fictional illustration of the flaw class, mirroring the RAILGUARD EXPECTED-FINDINGS.md category. Not the demo app's code."
+}
